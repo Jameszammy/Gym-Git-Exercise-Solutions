@@ -230,4 +230,185 @@ $ git stash\
 > Saved working directory and index state WIP on main: cfba84f adding home.html fi
 > le
 
+touch team.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git add team.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ code team.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash
+Saved working directory and index state WIP on main: cfba84f adding home.html fi
+le
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash
+No local changes to save
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+about.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash
+No local changes to save
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+about.html
+team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash
+No local changes to save
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git add team.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash
+Saved working directory and index state WIP on main: cfba84f adding home.html fi
+le
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash apply stash@{0}
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+new file: team.html
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+about.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+new file: team.html
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+about.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash pop stash@{1}
+Auto-merging team.html
+CONFLICT (add/add): Merge conflict in team.html
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+modified: README.md
+
+Unmerged paths:
+(use "git restore --staged <file>..." to unstage)
+(use "git add <file>..." to mark resolution)
+both added: team.html
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+about.html
+
+The stash entry is kept in case you need it again.
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git add home.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ status
+bash: status: command not found
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+modified: README.md
+
+Unmerged paths:
+(use "git restore --staged <file>..." to unstage)
+(use "git add <file>..." to mark resolution)
+both added: team.html
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+about.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git reset
+Unstaged changes after reset:
+M README.md
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git commit -a -m "commiting all new file"
+[main 8d9a43d] commiting all new file
+1 file changed, 74 insertions(+)
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status\
+
+> On branch main
+> Your branch is ahead of 'origin/main' by 3 commits.
+> (use "git push" to publish your local commits)
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+about.html
+team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git add about.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+(use "git push" to publish your local commits)
+
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+new file: about.html
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+team.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git commit -m "new file"
+[main 7faffea] new file
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 about.htm
 ...
