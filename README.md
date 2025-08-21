@@ -156,4 +156,78 @@ To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 447cc50..19b5086 main -> main
 branch 'main' set up to track 'origin/main'.
 
+% bundle one: exercise 2
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ touch home.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ code home.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git add home.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git commit -m "adding home.html file"
+[main cfba84f] adding home.html file
+1 file changed, 11 insertions(+)
+create mode 100644 home.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+modified: README.md
+modified: home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash
+Saved working directory and index state WIP on main: cfba84f adding home.html fi
+le
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ touch about.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git add about.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ code about.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+(use "git push" to publish your local commits)
+
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+new file: about.html
+
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+modified: about.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git stash\
+
+> Saved working directory and index state WIP on main: cfba84f adding home.html fi
+> le
+
 ...
