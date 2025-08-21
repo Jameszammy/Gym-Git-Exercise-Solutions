@@ -113,21 +113,6 @@ jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git remote add origin https://github.com/Jameszammy/Gym-Git-Exercise-Sol.git
 
 jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git push -u origin main
-To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
-! [rejected] main -> main (fetch first)
-error: failed to push some refs to 'https://github.com/Jameszammy/Gym-Git-
-se-Solutions.git'
-hint: Updates were rejected because the remote contains work that you do n
-hint: have locally. This is usually caused by another repository pushing t
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ ^C
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git pull origin main --allow-unrelated-histories
 remote: Enumerating objects: 6, done.
 remote: Counting objects: 100% (6/6), done.
@@ -146,18 +131,10 @@ From https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
 jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git push -u origin main
-Enumerating objects: 9, done.
-Counting objects: 100% (9/9), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (8/8), 948 bytes | 474.00 KiB/s, done.
-Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
-447cc50..19b5086 main -> main
-branch 'main' set up to track 'origin/main'.
+...
 
-% bundle one: exercise 2
-
+##bundle one: exercise 2
+...bash
 jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ touch home.html
 
