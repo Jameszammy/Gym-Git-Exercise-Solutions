@@ -280,6 +280,7 @@ $ git pull origin main
 Unpacking objects: 100% (1/1), 892 bytes | 111.00 KiB/s, done.
 From https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
+
 // Creating new branch
 
 $ git branch ft/service-redesign
@@ -305,5 +306,6 @@ j// Pushing to github repo
 $ git push -u origin main
 
 To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
+
 
 ...
