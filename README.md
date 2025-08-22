@@ -511,4 +511,72 @@ From https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
   CONFLICT (add/add): Merge conflict in services.html
   Automatic merge failed; fix conflicts and then commit the result.
 
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main|MERGING)
+$ git branch ft/service-redesign
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main|MERGING)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 4 different commits each, respectively.
+(use "git pull" if you want to integrate the remote branch with yours)
+
+You have unmerged paths.
+(fix conflicts and run "git commit")
+(use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+modified: README.md
+
+Unmerged paths:
+(use "git add <file>..." to mark resolution)
+both added: services.html
+
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+modified: README.md
+
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+team.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main|MERGING)
+$ ls
+README.md about.html home.html index.html services.html team.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main|MERGING)
+$ git add services.html README.md
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main|MERGING)
+$ git commit -a -m "Updated both files with new contents"
+[main 89bae7e] Updated both files with new contents
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git push -u origin main
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 2.13 KiB | 436.00 KiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
+9a9c0f1..89bae7e main -> main
+branch 'main' set up to track 'origin/main'.
+
 ...
