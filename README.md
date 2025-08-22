@@ -307,3 +307,39 @@ $ git push -u origin main
 To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 
 ...
+
+# Bundle Three
+
+## Exercise 1
+
+...bash
+
+// Creating new branch
+
+$ git checkout -b ft/team-page
+
+// Creating new file
+
+$ touch team.html
+
+// Opening with code editor
+
+$ code team.html
+
+// Staging file
+
+$ git add team.html
+
+// Adding to git repo
+
+$ git commit -m "updating file"
+
+// Connecting with github repo
+
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+// Pushing to github
+
+$ git push -u origin ft/team-page
+
+...
