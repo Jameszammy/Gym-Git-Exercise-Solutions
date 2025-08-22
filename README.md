@@ -6,526 +6,306 @@
 
 ...bash
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~
+//creating new folder
+
+mkdir folder name
+
+//change directory
+
 $ cd ProjectGym
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym
-$ git init
-Initialized empty Git repository in C:/Users/jzamm/ProjectGym/.git/
+//initialazing folder to a git repository
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git init
+
+//Cheacking if the folder is initialize to git repo
+
 $ ls -a
 ./ ../ .git/
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+//Creating new files
+
 $ touch index.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+//Checking status for track,stage, modify and untrack files
+
 $ git status
-On branch main
 
-No commits yet
+//Staging a file
 
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-index.html
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git add index.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
+//Commiting file or files to the repo
 
-No commits yet
-
-Changes to be committed:
-(use "git rm --cached <file>..." to unstage)
-new file: index.html
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git commit -m "First commite"
-[main (root-commit) bfc7e5a] First commite
-1 file changed, 0 insertions(+), 0 deletions(-)
-create mode 100644 index.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git commit -a -m "First commite" for multiple files
+
+//Opening files in code editor
+
 $ code index.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Changes not staged for commit:
-(use "git add <file>..." to update what will be committed)
-(use "git restore <file>..." to discard changes in working directory)
-modified: index.html
+//Creating New Branch
 
-no changes added to commit (use "git add" and/or "git commit -a")
+$ git branch master
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git add index.html
+$ git checkout -b master to creat and switch to new branch
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Changes to be committed:
-(use "git restore --staged <file>..." to unstage)
-modified: index.html
+//To know the your branches created
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git commit -m "I added new content to the index.html file"
-[main 7caa264] I added new content to the index.html file
-1 file changed, 11 insertions(+)
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-nothing to commit, working tree clean
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git branch
 
-- main
+//To move from branch to branch
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git switch master
+$ git checkout master
+
+// To change branch name to another name
+
 $ git branch -m main master
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (master)
-$ git branch
+// To connect to github repo
 
-- master
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (master)
-$ git branch -m master main
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git branch
-
-- main
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git remote add origin https://github.com/Jameszammy/Gym-Git-Exercise-Sol.git
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git pull origin main --allow-unrelated-histories
-remote: Enumerating objects: 6, done.
-remote: Counting objects: 100% (6/6), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+// To pull for branch the latest changes
+
+$ git pull origin main
+
 Unpacking objects: 100% (6/6), 2.33 KiB | 108.00 KiB/s, done.
 From https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
-- branch main -> FETCH_HEAD
-- [new branch] main -> origin/main
-  Merge made by the 'ort' strategy.
-  README.md | 108 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  +++++
-  1 file changed, 108 insertions(+)
-  create mode 100644 README.md
+// To push changes to github repo
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git push -u origin main
 ...
 
-##bundle one: exercise 2
+## Bundle one:
+
+## exercise 2
+
 ...bash
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+
+// Create new file
+
 $ touch home.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Open new file with code editor
+
 $ code home.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Staged new file
+
 $ git add home.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git commit -m "adding home.html file"
-[main cfba84f] adding home.html file
-1 file changed, 11 insertions(+)
-create mode 100644 home.html
+// Commiting or sending to git repo
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
+$ git commit -m "adding home.html
 
-Changes not staged for commit:
-(use "git add <file>..." to update what will be committed)
-(use "git restore <file>..." to discard changes in working directory)
-modified: README.md
-modified: home.html
+// Staging multiple files
+$ git add README.md home.html
 
-no changes added to commit (use "git add" and/or "git commit -a")
+// To hide your current working directory if you don't stage or commit.
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git stash
-Saved working directory and index state WIP on main: cfba84f adding home.html fi
-le
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// check for stage, mmodify and unstage
+
 $ git status
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
 
-nothing to commit, working tree clean
+// Created new page
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ touch about.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Stage new file
 $ git add about.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+//Open with code editor
+
 $ code about.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
+// stash new file for later use
 
-Changes to be committed:
-(use "git restore --staged <file>..." to unstage)
-new file: about.html
+$ git stash
 
-Changes not staged for commit:
-(use "git add <file>..." to update what will be committed)
-(use "git restore <file>..." to discard changes in working directory)
-modified: about.html
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git stash\
-
-> Saved working directory and index state WIP on main: cfba84f adding home.html fi
-> le
+// Created new file
 
 touch team.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+//Stage new file
+
 $ git add team.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Open with code editor
+
 $ code team.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Inde new file for later use
+
 $ git stash
-Saved working directory and index state WIP on main: cfba84f adding home.html fi
-le
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git stash
-No local changes to save
+// To bring the 1st stage file back to the working directory
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
-
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-about.html
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git stash
-No local changes to save
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
-
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-about.html
-team.html
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git stash
-No local changes to save
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git add team.html
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git stash
-Saved working directory and index state WIP on main: cfba84f adding home.html fi
-le
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git stash apply stash@{0}
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
 
-Changes to be committed:
-(use "git restore --staged <file>..." to unstage)
-new file: team.html
+// To bring the second stash file to working directory and remove it.
 
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-about.html
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
-
-Changes to be committed:
-(use "git restore --staged <file>..." to unstage)
-new file: team.html
-
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-about.html
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git stash pop stash@{1}
-Auto-merging team.html
-CONFLICT (add/add): Merge conflict in team.html
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
 
-Changes to be committed:
-(use "git restore --staged <file>..." to unstage)
-modified: README.md
+// Add to stage after editing
 
-Unmerged paths:
-(use "git restore --staged <file>..." to unstage)
-(use "git add <file>..." to mark resolution)
-both added: team.html
-
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-about.html
-
-The stash entry is kept in case you need it again.
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git add home.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ status
-bash: status: command not found
+//This undoes your last commit but keeps the changes staged—perfect if you want to tweak your commit message or add more files.
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
-
-Changes to be committed:
-(use "git restore --staged <file>..." to unstage)
-modified: README.md
-
-Unmerged paths:
-(use "git restore --staged <file>..." to unstage)
-(use "git add <file>..." to mark resolution)
-both added: team.html
-
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-about.html
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git reset
+$ git reset --soft HEAD-1
 Unstaged changes after reset:
 M README.md
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// To commit all files in the stage to git repo
+
 $ git commit -a -m "commiting all new file"
-[main 8d9a43d] commiting all new file
-1 file changed, 74 insertions(+)
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status\
+// staged file after changes
 
-> On branch main
-> Your branch is ahead of 'origin/main' by 3 commits.
-> (use "git push" to publish your local commits)
-
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-about.html
-team.html
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git add about.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 3 commits.
-(use "git push" to publish your local commits)
+// Commit stage file to git repo
 
-Changes to be committed:
-(use "git restore --staged <file>..." to unstage)
-new file: about.html
-
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-team.html
-
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
 $ git commit -m "new file"
-[main 7faffea] new file
-1 file changed, 0 insertions(+), 0 deletions(-)
-create mode 100644 about.htm
+
 ...
 
-#Bundle two
+# Bundle two
 
-##Exercise 1
+## Exercise 1
 
 ...bash
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+
+// Create new branch
+
 $ git branch ft/bundle-2
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+
+// Creating new file
+
 $ touch services.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Stage new file
+
 $ git add services.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Adding to git repo
+
 $ git commit -m "adding new page"
-[main 5136c5b] adding new page
-1 file changed, 0 insertions(+), 0 deletions(-)
-create mode 100644 services.html
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+
+// Open file with code editor
+
 $ code services.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Stage changes
+
 $ git add services.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
-$ git commit -m "make some changes in services.html file"
-[main 4b5775e] make some changes in services.html file
-1 file changed, 15 insertions(+)
+// add changes to repo
+$ git commit -m "make
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Switching to another branch
+
 $ git checkout ft/bundle-2
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+// Creating file
+
 $ touch services.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+// Staging file
+
 $ git add services.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
-$ git commit -m "adding new file"
-[ft/bundle-2 998b23d] adding new file
-1 file changed, 0 insertions(+), 0 deletions(-)
-create mode 100644 services.html
+// Adding to repo
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ git commit -m
+
+// Opening with code editor
+
 $ code services.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+// Staging changes
+
 $ git add services.html
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
-$ git commit -m "make some update in this file"
-[ft/bundle-2 a23cde6] make some update in this file
-1 file changed, 11 insertions(+)
+// Adding changes to repo
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ git commit -m
+
+// Staging file
+
 $ git add README.md
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
-$ git commit -m "added new content to this file"
-[ft/bundle-2 3d584ea] added new content to this file
-1 file changed, 55 insertions(+)
+// Adding to repo
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ git commit -m
+
+// Connecting with github repo
+
 $ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
-usage: git remote add [<options>] <name> <url>
 
-    -f, --[no-]fetch      fetch the remote branches
-    --[no-]tags           import all tags and associated objects when fetching
-                          or do not fetch any tag at all (--no-tags)
-    -t, --[no-]track <branch>
-                          branch(es) to track
-    -m, --[no-]master <branch>
-                          master branch
-    --[no-]mirror[=(push|fetch)]
-                          set up remote as a mirror to push to or fetch from
+// Pushing to github repo
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
 $ git push -u origin ft/bundle-2
-Enumerating objects: 10, done.
-Counting objects: 100% (10/10), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 1.29 KiB | 147.00 KiB/s, done.
-Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (3/3), completed with 1 local object.
-remote:
+
+// Creating a pull request
+
 remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
 remote: https://github.com/Jameszammy/Gym-Git-Exercise-Solutions/pull/new/f
 t/bundle-2
 remote:
 To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 
-- [new branch] ft/bundle-2 -> ft/bundle-2
-  branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
-  ...
+...
 
-#Bundle two
-##Exercise 2
+# Bundle two
+
+## Exercise 2
 
 ...bash
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
-$ git checkout main
-Switched to branch 'main'
-Your branch is ahead of 'origin/main' by 2 commits.
-(use "git push" to publish your local commits)
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+// Switching to main branch
+
+$ git checkout main
+
+// pulling from main branch
+
 $ git pull origin main
-remote: Enumerating objects: 1, done.
-remote: Counting objects: 100% (1/1), done.
-remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+
 Unpacking objects: 100% (1/1), 892 bytes | 111.00 KiB/s, done.
 From https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
-- branch main -> FETCH_HEAD
-  f8078db..9a9c0f1 main -> origin/main
-  Auto-merging services.html
-  CONFLICT (add/add): Merge conflict in services.html
-  Automatic merge failed; fix conflicts and then commit the result.
-jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/service-redesign)
-$ git push --set-upstream origin ft/service-redesign
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 321 bytes | 321.00 KiB/s, done.
-Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-remote:
-remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
-remote:      https://github.com/Jameszammy/Gym-Git-Exercise-Solutions/pull/new/f
-t/service-redesign
-remote:
+
+// Creating new branch
+
+$ git branch ft/service-redesign
+
+// See status
+
+$ git status
+
+// Staging multiple files
+
+$ git add services.html README.md
+
+// Adding multiple files to git repo
+
+$ git commit -a -m "Updated both files with new contents"
+
+// Connecting with github repo
+
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+j// Pushing to github repo
+
+$ git push -u origin main
+
 To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
- * [new branch]      ft/service-redesign -> ft/service-redesign
-branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
 
 ...
