@@ -389,3 +389,58 @@ $ git commit -m "new file"
 1 file changed, 0 insertions(+), 0 deletions(-)
 create mode 100644 about.htm
 ...
+
+#Bundle two
+
+##Exercise 1
+
+...bash
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git branch ft/bundle-2
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ touch services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git add services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git commit -m "adding new page"
+[main 5136c5b] adding new page
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 services.html
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ code services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git add services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git commit -m "make some changes in services.html file"
+[main 4b5775e] make some changes in services.html file
+1 file changed, 15 insertions(+)
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (main)
+$ git checkout ft/bundle-2
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ touch services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ git add services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ git commit -m "adding new file"
+[ft/bundle-2 998b23d] adding new file
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ code services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ git add services.html
+
+jzamm@DESKTOP-96E9C5V MINGW64 ~/ProjectGym (ft/bundle-2)
+$ git commit -m "make some update in this file"
+[ft/bundle-2 a23cde6] make some update in this file
+1 file changed, 11 insertions(+)
