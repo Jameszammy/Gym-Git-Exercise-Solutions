@@ -474,4 +474,32 @@ $ git push -u origin ft/team-page
 =======
 >>>>>>> fba0e43 (some changes in README.md file)
 
+// Switching to another branch
+
+$ git checkout ft/team
+
+// Reverting last commit using the last commit hash to change last commit message
+
+$ git revert 99a862f
+
+// Pushing the changes to github repo
+
+$ git push origin ft/team
+
+...
+
+# Bundle Three
+
+## Exercise 2
+
+...bash
+
+//Switch to another branch
+
+$ git checkout ft/faq-page
+
+// Creating new branch from another branch
+
+$ git checkout -b ft/home-page-redesign
+
 ...
