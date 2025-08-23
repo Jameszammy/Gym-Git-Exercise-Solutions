@@ -287,8 +287,8 @@ From https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
 // Creating new branch
 
->>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
-$ git branch ft/service-redesign
+> > > > > > > d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
+> > > > > > > $ git branch ft/service-redesign
 
 // See status
 
@@ -312,11 +312,10 @@ $ git push -u origin main
 
 To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 
-<<<<<<< HEAD
-=======
+# <<<<<<< HEAD
 
->>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
-...
+> > > > > > > d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
+> > > > > > > ...
 
 # Bundle Three
 
@@ -330,7 +329,8 @@ To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 $ git checkout -b ft/team
 =======
 $ git checkout -b ft/team-page
->>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
+
+> > > > > > > d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
 
 // Creating new file
 
@@ -460,8 +460,55 @@ $ git add README.md services.html
 // Adding files to git repo
 
 $ git commit -a -m "commiting changes in files"
-=======
+
 $ git push -u origin ft/team-page
->>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
+
+// Connecting to github repo
+
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+// Pushing changes to github repo
+
+$ git push origin main
+
+// Switching branches
+
+$ git checkout ft/home-page-redesign
+
+// Rebasing branch and if a file have conflict
+
+$ git rebase main
+
+// To reslove conflict first add the file
+
+$ git add README.md
+
+// To continue the conflict
+
+$ git rebase --continue
+
+// if you push the branch before, and you rebase you will have to use push --force
+
+$ git push origin ft/home-page-redesign --force
+
+// Open file with code editor for edit
+
+$ code home.html
+
+// Staging files changes
+
+$ git add home.html README.md
+
+// Adding them to git repo
+
+$ git commit -a -m "Changes in both files"
+
+// Connecting with github repo
+
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+// Pushing to github repo
+
+$ git push origin ft/home-page-redesign
 
 ...
