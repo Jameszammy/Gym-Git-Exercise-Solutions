@@ -280,8 +280,14 @@ $ git pull origin main
 Unpacking objects: 100% (1/1), 892 bytes | 111.00 KiB/s, done.
 From https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
+<<<<<<< HEAD
 // Creating new branch
 
+=======
+
+// Creating new branch
+
+>>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
 $ git branch ft/service-redesign
 
 // See status
@@ -306,6 +312,10 @@ $ git push -u origin main
 
 To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
 ...
 
 # Bundle Three
@@ -316,7 +326,11 @@ To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 
 // Creating new branch
 
+<<<<<<< HEAD
 $ git checkout -b ft/team
+=======
+$ git checkout -b ft/team-page
+>>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
 
 // Creating new file
 
@@ -340,6 +354,7 @@ $ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
 // Pushing to github
 
+<<<<<<< HEAD
 $ git push -u origin ft/team
 
 // Changing to main branch
@@ -445,5 +460,8 @@ $ git add README.md services.html
 // Adding files to git repo
 
 $ git commit -a -m "commiting changes in files"
+=======
+$ git push -u origin ft/team-page
+>>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
 
 ...
