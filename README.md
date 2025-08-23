@@ -438,4 +438,12 @@ $ git checkout -b ft/home-page-redesign
 
 $ git checkout main
 
+// Staging files
+
+$ git add README.md services.html
+
+// Adding files to git repo
+
+$ git commit -a -m "commiting changes in files"
+
 ...
