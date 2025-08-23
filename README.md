@@ -6,7 +6,12 @@
 
 ...bash
 
-jzamm@DESKTOP-96E9C5V MINGW64 ~
+//creating new folder
+
+mkdir folder name
+
+//change directory
+
 $ cd ProjectGym
 
 //initialazing folder to a git repository
@@ -353,8 +358,64 @@ $ git checkout ft/team
 
 $ git log --oneline -1
 
+// Switching branch
+
+$ git checkout ft/contact-page
+
 // To get changes from last commit on ft/team branch
 
 $ git cherry-pick 99a862f
+
+//Connecting to github repo
+
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+//pushing changes to github repo
+
+$ git push -u ft/contact-page
+
+// Creating new branch and switching to it
+
+$ git checkout -b ft/faq-page
+
+// Creating new file
+
+$ touch faq.html
+
+// Staging the new file
+
+$ git add faq.html
+
+// Opening file with code editor
+
+$ code faq.html
+
+// Staging changes in file
+
+$ git add faq.html
+
+// Adding file changes to git repo
+
+$ git commit -m "Adding new file"
+
+// Connecting to github repo
+
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+// Pushing changes to github repo
+
+$ git push -u origin ft/faq-page
+
+// Switching to another branch
+
+$ git checkout ft/team
+
+// Reverting last commit using the last commit hash to change last commit message
+
+$ git revert 99a862f
+
+// Pushing the changes to github repo
+
+$ git push origin ft/team
 
 ...
