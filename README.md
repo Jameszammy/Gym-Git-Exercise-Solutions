@@ -327,10 +327,14 @@ To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 // Creating new branch
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 $ git checkout -b ft/team
 =======
 $ git checkout -b ft/team-page
 >>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
+=======
+$ git checkout -b ft/team
+>>>>>>> fba0e43 (some changes in README.md file)
 
 // Creating new file
 
@@ -355,6 +359,9 @@ $ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 // Pushing to github
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fba0e43 (some changes in README.md file)
 $ git push -u origin ft/team
 
 // Changing to main branch
@@ -420,6 +427,7 @@ $ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 // Pushing changes to github repo
 
 $ git push -u origin ft/faq-page
+<<<<<<< HEAD
 
 // Switching to another branch
 
@@ -463,5 +471,7 @@ $ git commit -a -m "commiting changes in files"
 =======
 $ git push -u origin ft/team-page
 >>>>>>> d4d28603c8d9e3d5e24c2dd1da0dddc112b02b72
+=======
+>>>>>>> fba0e43 (some changes in README.md file)
 
 ...
