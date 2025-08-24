@@ -554,3 +554,23 @@ $ git push origin main
 $ git push Project-Copy main
 
 ...
+
+# Bundle Four
+
+## Exercise 2
+
+...bash
+
+// Creating and checkout new branch
+
+$ git checkout -b ft/footer
+
+// Staging changes
+
+$ git add home.html README.md
+
+// Adding changes to git repo
+
+$ git commit -a -m "Latest changes added"
+
+...
