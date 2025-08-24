@@ -512,3 +512,45 @@ $ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 $ git push origin ft/home-page-redesign
 
 ...
+
+# Bundle Four
+
+## Exercise 1
+
+...bash
+
+// Switching to main branch
+
+$ git checkout main
+
+// After creating new github repo as a second remote to your project, use this to add it to your project.
+
+$ git remote add Project-Copy https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+// To verify if it's added
+
+$ git remote -v
+
+// To push it to the main project repo
+
+$ git push Project-Copy
+
+// Staging changes of multiple files
+
+$ git add home.html README.md
+
+// Adding to git repo
+
+$ git commit -a -m "Changes added"
+
+// Connecting with the two github repo
+
+$ git remote add Project-Copy https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+// Pushing the changes to the two repos
+
+$ git push origin main
+
+$ git push Project-Copy main
+
+...
