@@ -554,3 +554,41 @@ $ git push origin main
 $ git push Project-Copy main
 
 ...
+
+# Bundle Four
+
+## Exercise 2
+
+...bash
+
+// Creating and checkout new branch
+
+$ git checkout -b ft/footer
+
+// Staging changes
+
+$ git add home.html README.md
+
+// Adding changes to git repo
+
+$ git commit -a -m "Latest changes added"
+
+// Staging latest changes
+
+$ git add home.html README.md
+
+// Adding latest changes
+
+$ git commit -a -m "Latest changes made"
+
+// Connecting with repo
+
+$ git remote add Project-Copy https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+// Pushing to github repos
+
+$ git push origin main
+
+$ git push Project-Copy main
+
+...
