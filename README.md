@@ -699,7 +699,39 @@ $ git add menu.html
 
 $ git commit -m "Adding content to page"
 
+// Connecting with github repo
+
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions/tree/main/git-cafe-exercise
+
 // Pushing to github
 
 $ git push origin feature/menu-page
+...
+
+# Bundle Six
+
+## Exercise 2
+
+...bash
+
+// Create new branch
+
+$ git checkout -b bug/fix
+
+// Staging changes in index-4.html
+
+$ git add index-4.html
+
+// Adding to repo
+
+$ git commit -m "New changes in index-4.html"
+
+// Connecting with github repo
+
+$ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions/tree/main/git-cafe-exercise
+
+// Pushing to github
+
+$ git push origin bug/fix
+
 ...
