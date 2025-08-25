@@ -676,3 +676,30 @@ $ git push origin main
 $ git push git-cafe-exercise main
 
 ...
+
+# Bundle Six
+
+## Exercise 1
+
+...bash
+
+// Create feature branch
+
+$ git checkout -b feature/menu-page
+
+// Create new file
+
+$ touch menu.html
+
+// Staging file
+
+$ git add menu.html
+
+// Adding to repo
+
+$ git commit -m "Adding content to page"
+
+// Pushing to github
+
+$ git push origin feature/menu-page
+...
