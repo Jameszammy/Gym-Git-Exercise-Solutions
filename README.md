@@ -280,15 +280,11 @@ $ git pull origin main
 Unpacking objects: 100% (1/1), 892 bytes | 111.00 KiB/s, done.
 From https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
+// Creating new branch
 
 // Creating new branch
 
-
-
-// Creating new branch
-
-
- $ git branch ft/service-redesign
+$ git branch ft/service-redesign
 
 // See status
 
@@ -312,7 +308,7 @@ $ git push -u origin main
 
 To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 
- ...
+...
 
 # Bundle Three
 
@@ -322,11 +318,9 @@ To https://github.com/Jameszammy/Gym-Git-Exercise-Solutions.git
 
 // Creating new branch
 
-
 $ git checkout -b ft/team
 
 $ git checkout -b ft/team-page
-
 
 // Creating new file
 
@@ -349,7 +343,6 @@ $ git commit -m "updating file"
 $ git remote add https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
 
 // Pushing to github
-
 
 $ git push -u origin ft/team
 
@@ -583,7 +576,7 @@ $ git remote add Project-Copy https://github.com/Jameszammy/Gym-Git-Exercise-Sol
 
 // Pushing to github repos
 
- ft/squashing
+ft/squashing
 $ git push origin ft/footer
 
 $ git push Project-Copy ft/footer
@@ -614,5 +607,72 @@ $ git push origin main
 
 $ git push Project-Copy main
 
+...
+
+# Bundle Five
+
+## Exercise 1
+
+...bash
+
+//On your Github repo enable Github pages
+
+- Open setting, select pages, set branch to main and save.
+
+//Check if the link is publicly visible to anyone
+
+- Click the link and see if it visible to anyone
+
+...
+
+# Bundle Five
+
+## Exercise 2
+
+...bash
+
+// Fork this project https://github.com/TheGymRwanda/git-cafe-exercise
+
+// Clone your fork on your machine using this URL
+
+$ git clone https://github.com/Jameszammy/git-cafe-exercise.git
+
+// Edited index.html file
+
+$ code index.html
+
+//Staging the file
+
+$ git add index.html
+
+// Adding to git repo
+
+$ git commit -m "New changes in index.html file"
+
+// Removing embeded git repo to regular folder
+
+$ rm -rf git-cafe-exercise/.git
+
+// Staging it
+
+git add git-cafe-exercise
+
+// Add it to git repo
+
+git commit -m "Add git-cafe-exercise as regular folder"
+
+// Pushing it
+
+git push
+
+// Connecting with repos
+
+$ git remote add git-cafe-exercise https://github.com/Jameszammy/Gym-Git-Exercise-Solutions
+
+// Pushing changes to repos
+
+$ git push origin main
+
+$ git push git-cafe-exercise main
 
 ...
